@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research Notes — Aymeric Verdeau-Borne</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- TOPBAR -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <span class="logo">Research Notes <span class="logo-sep">—</span> Actualité Macro &amp; Articles</span>
+      <nav class="nav">
+        <a href="index.html" class="nav-link active">Notes</a>
+        <a href="about.html" class="nav-link">À propos</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <p class="eyebrow">Aymeric Verdeau-Borne</p>
+      <h1 class="hero-title">Macro Research Portfolio</h1>
+      <p class="hero-desc">Veille hebdomadaire des publications institutionnelles — BCE, Fed, PMI, inflation et marchés de taux.</p>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-val" id="note-count">—</span>
+          <span class="stat-label">Notes publiées</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-val" id="latest-week">—</span>
+          <span class="stat-label">Dernière édition</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-val" id="since-date">Jan. 2026</span>
+          <span class="stat-label">Depuis</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BODY -->
+  <div class="body-layout container">
+
+    <!-- NOTES LIST -->
+    <main class="notes-col">
+      <div class="col-header">
+        <span class="col-title">Toutes les notes</span>
+        <div class="filters" id="filters">
+          <button class="pill active" data-filter="all">Toutes</button>
+          <button class="pill" data-filter="BCE">BCE</button>
+          <button class="pill" data-filter="Fed">Fed</button>
+          <button class="pill" data-filter="PMI">PMI</button>
+          <button class="pill" data-filter="Inflation">Inflation</button>
+        </div>
+      </div>
+      <div id="notes-list">
+        <!-- Injected by JS -->
+        <div class="loading">Chargement des notes…</div>
+      </div>
+    </main>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sb-block">
+        <div class="sb-label">Taux directeurs</div>
+        <div class="sb-row"><span>BCE</span><span class="sb-val">2,50%</span></div>
+        <div class="sb-row"><span>Fed</span><span class="sb-val">4,50%</span></div>
+        <div class="sb-row"><span>BoE</span><span class="sb-val">4,25%</span></div>
+      </div>
+      <div class="sb-block">
+        <div class="sb-label">Inflation</div>
+        <div class="sb-row"><span>Zone euro</span><span class="sb-val">2,2%</span></div>
+        <div class="sb-row"><span>US CPI</span><span class="sb-val">3,4%</span></div>
+        <div class="sb-row"><span>France</span><span class="sb-val">1,8%</span></div>
+      </div>
+      <div class="sb-block">
+        <div class="sb-label">Agenda</div>
+        <div class="sb-event"><span class="sb-event-name">FOMC</span><span class="sb-event-date">18 juin 2026</span></div>
+        <div class="sb-event"><span class="sb-event-name">CPI US</span><span class="sb-event-date">11 juin 2026</span></div>
+        <div class="sb-event"><span class="sb-event-name">PMI flash ZE</span><span class="sb-event-date">23 juin 2026</span></div>
+        <div class="sb-event"><span class="sb-event-name">Réunion BCE</span><span class="sb-event-date">24 juil. 2026</span></div>
+      </div>
+    </aside>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-name">Aymeric Verdeau-Borne — Research Notes</span>
+      <span class="footer-disc">Usage personnel — non destiné à la publication</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/notes-registry.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
